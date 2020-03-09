@@ -7,39 +7,47 @@ const Cart = () => import('../pages/Cart/Cart.vue')
 const Category = () => import('../pages/Category/Category.vue')
 const Personal = () => import('../pages/Personal/Personal.vue')
 const WorthBuy = () => import('../pages/WorthBuy/WorthBuy.vue')
-
+const Search = () => import('../pages/Search/Search.vue')
 export default [
-  {
-    path: '/msite',
-    component: Msite,
-    meta: {
-      isShowFooter: true
-    }
-  },
-  {
-    path: '/cart',
-    component: Cart,
-    meta: {
-      isShowFooter: true
-    }
-  },
-  {
-    path: '/category',
-    component: Category,
-    meta: {
-      isShowFooter: true
-    }
-  },
-  {
-    path: '/worthbuy',
-    component: WorthBuy,
-    meta: {
-      isShowFooter: true
-    }
-  },
-  {
-    path: '/personal',
-    component: Personal,
-    meta: {}
-  }
+	{
+		path: '/msite',
+		component: Msite,
+		meta: {
+			isShowFooter: true
+		}
+	},
+	{
+		path: '/search',
+		component: Search
+	},
+	{
+		path: '/cart',
+		component: Cart,
+		meta: {
+			isShowFooter: true
+		}
+	},
+	{
+		path: '/category',
+		component: Category,
+		meta: {
+			isShowFooter: true
+		}
+	},
+	{
+		path: '/worthbuy',
+		component: WorthBuy,
+		meta: {
+			isShowFooter: true
+		}
+	},
+	{
+		path: '/personal',
+		component: Personal,
+		meta: {}
+	},
+	{
+		path: '/',
+		redirect: '/msite'
+	}
 ]
