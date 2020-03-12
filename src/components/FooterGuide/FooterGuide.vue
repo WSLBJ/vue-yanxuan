@@ -62,7 +62,7 @@ export default {
 .footer_guide
   top-border-1px(#d9d9d9)
   position fixed
-  z-index 100
+  z-index 1000
   left 0
   right 0
   bottom 0

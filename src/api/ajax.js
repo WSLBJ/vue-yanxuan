@@ -2,7 +2,6 @@
 import axios from 'axios'
 // 引入qs
 import qs from 'qs'
-import { Toast } from 'mint-ui'
 // 引入router
 import router from '../router'
 
@@ -18,7 +17,7 @@ axios.interceptors.request.use(config => {
 })
 
 // 添加响应拦截器
-axios.interceptors.request.use(response => {
+axios.interceptors.response.use(response => {
 	return response.data
 }, error => {
 	// 中断错误信息
